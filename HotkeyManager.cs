@@ -1,23 +1,13 @@
 ﻿using HarmonyLib;
 using Kingmaker;
-using Kingmaker.Blueprints.JsonSystem;
-using Kingmaker.Blueprints.Root;
 using Kingmaker.GameModes;
 using Kingmaker.UI;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityExplorerHotKeyFix.Utility;
-using UnityModManagerNet;
-using UnityExplorer.UI;
 using UnityExplorer.Inspectors;
-using UnityExplorer.Inspectors.MouseInspectors;
+using UnityExplorerHotKeyFix.Utility;
 
 namespace UnityExplorerHotKeyFix
 {

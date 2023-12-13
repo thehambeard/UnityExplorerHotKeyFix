@@ -1,5 +1,5 @@
-﻿using UnityExplorerHotKeyFix.Utility;
-using System.Reflection;
+﻿using System.Reflection;
+using UnityExplorerHotKeyFix.Utility;
 using UnityModManagerNet;
 
 namespace UnityExplorerHotKeyFix
