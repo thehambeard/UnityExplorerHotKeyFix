@@ -1,0 +1,11 @@
+{
+  "Id": "UnityExplorerHotKeyFix",
+  "DisplayName": "UnityExplorerHotKeyFix",
+  "Author": "Hambeard",
+  "Version": "1.0",
+  "ManagerVersion": "0.23.5",
+  "Requirements": [],
+  "LoadAfter": [ "MewsiferConsole.Mod" ],
+  "AssemblyName": "UnityExplorerHotKeyFix.dll",
+  "EntryMethod": "UnityExplorerHotKeyFix.Main.Load"
+}
