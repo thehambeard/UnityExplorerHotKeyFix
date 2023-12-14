@@ -17,8 +17,8 @@ namespace UnityExplorerHotKeyFix
 
         public void HandleModDisable()
         {
-            UnbindKey(KeyCode.F3, "UEHOTKEYFIXMOUSEINSPECTUI", () => InspectUnderMouse.Instance.StartInspect(MouseInspectMode.UI));
-            UnbindKey(KeyCode.F4, "UEHOTKEYFIXMOUSEINSPECTWORLD", () => InspectUnderMouse.Instance.StartInspect(MouseInspectMode.World));
+            UnbindKey("UEHOTKEYFIXMOUSEINSPECTUI", () => InspectUnderMouse.Instance.StartInspect(MouseInspectMode.UI));
+            UnbindKey("UEHOTKEYFIXMOUSEINSPECTWORLD", () => InspectUnderMouse.Instance.StartInspect(MouseInspectMode.World));
         }
 
         public void HandleModEnable()
@@ -34,7 +34,7 @@ namespace UnityExplorerHotKeyFix
                 false, false, false, KeyboardAccess.TriggerType.KeyDown, KeyboardAccess.ModificationSide.Any);
         }
 
-        private void UnbindKey(KeyCode key, string name, Action action)
+        private void UnbindKey(string name, Action action)
         {
             Game.Instance.Keyboard.Unbind(name, action);
             Game.Instance.Keyboard.UnregisterBinding(name);
@@ -60,8 +60,5 @@ namespace UnityExplorerHotKeyFix
                 }
             }
         }
-
-
-
     }
 }
